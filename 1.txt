@@ -1,0 +1,25 @@
+void main() 
+{
+//---------------------------------------PERTEMUAN 1----------------------------------
+  print("--------------------------------PERTEMUAN 1--------------------------------");
+  print ("Nyimas Nisrinaa Kamilah");
+  
+  //menyimpan teks dalam variabel string
+  String pesan = "Apa kabar?", 
+         nama = "Nyimas Nisrinaa"; //dengan tipe data
+  
+  //mencetak teks dari variabel ke konsul
+  print(pesan);
+  
+  // $ menandakan bahwa ia variabel
+  var bahasa = "Dart"; //tanpa tipe data
+  print("Hallo $nama");
+  print("Hallo $nama, Welcome to $bahasa"); //String interpolation
+  print("Hallo " + nama + " Welcome to " + bahasa); //concate
+  
+  //Mencetak Dua Teks dalam Variabel 
+  String teks1 = "Selamat";
+  String teks2 = "Pagi";
+  String teks3 = teks1 + " " + teks2;
+  print(teks3);
+ 

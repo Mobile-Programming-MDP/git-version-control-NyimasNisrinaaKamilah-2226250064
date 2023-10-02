@@ -1,0 +1,22 @@
+void main() {
+// Menampilkan hasil class Pewarisan
+   var mobil1 = Mobil('Toyota', 2022, 4);
+   var mobil2 = Mobil('Honda', 2021, 4);
+  
+   mobil1.infoMobil();
+   mobil1.infoKendaraan();
+   mobil2.infoMobil();
+   mobil2.infoKendaraan();
+}
+
+//--Contoh class Pewarisan
+  class Kendaraan {
+    String merek;
+    int tahunProduksi;
+   
+    Kendaraan(this.merek, this.tahunProduksi);
+   
+    void infoKendaraan() {
+      print('Kendaraan $merek, Tahun : $tahunProduksi');
+   }
+  }

@@ -1,0 +1,73 @@
+void {
+//---------------------------------------PERTEMUAN 2----------------------------------
+  
+  print("--------------------------------PERTEMUAN 2--------------------------------");
+  
+  String namaa = "Nyimas Nisrinaa Kamilah";
+  int usia = 18;
+  print("Hallo, nama saya $namaa dan usia saya $usia tahun");
+  print("Hallo, nama saya " + namaa + " dan usia saya " + usia.toString() + " tahun");
+  
+  var alamat = "Jalan PDAM Perumahan Griya Tiga Putri Blok CD-5";
+  var alamat2 = 'Lr Sei Lumpur darat';
+  print(alamat.runtimeType); // mendeteksi tipe data alamat apa
+  print(alamat2.runtimeType);
+  
+  //Collection
+  var numberList = [1,2,3,4]; //List
+  var stringList = ["Hello", "Universitas MDP", "Dart"]; //List
+  print(numberList);
+  print(stringList);
+  
+  var dynamicList = [1, "Universitas MDP", true];
+  print(dynamicList.runtimeType); // seharusnya keluar List<dynamic>
+  print(dynamicList[1]); //print salah satu dari dynamicList menggunakan index
+  
+  //Set
+  Set <int> mySet = new Set.from([1, 2, 3, 4, 2, 1]);
+  print(mySet);
+  
+  var setA = {1,2,3};
+  var setB = {1,5,7};
+  
+    //menambahkan 4 ke dalam setA
+    setA.add(4);
+    print(setA);
+
+    //menghapus 7 dari setB
+    setB.remove(7);
+    print(setB);
+  
+    //union dan intersaction
+    setA.union(setB);
+    setA.intersection(setB);
+    print(setA.union(setB));
+    print( setA.intersection(setB));
+  
+  //--Cari error
+  int angka1 = 10;
+  int angka2 = 5;
+  
+//   int hasilTambah = angka1 + angka2;
+//   int hasilKali = angka1 * angka2;
+//   bool hasilPerbandingan = angka1 > angka2;
+//   bool hasilPerbandingan2 = angka1 == angka2;
+//   bool hasilLogika = (angka1 > 5) && (angka2 < 10);
+//   print("Hasil Tambah = $hasilTambah");
+//   print("Hasil Kali = $hasilKali");
+//   print("Hasil Logika = $hasilLogika");
+//   print("Hasil perbandingan = $hasilPerbandingan");
+//   print("Hasil perbandingan = $hasilPerbandingan2");
+  
+  print ("Angka 1 $angka1");
+  var primerNumbers = [2,3,5,7,11,13,17,19];
+  var searchNumbers = 13;
+  
+  for(int i =0 ; i < primerNumbers.length; i++){
+    if( searchNumbers == primerNumbers [i]){
+     print("$searchNumbers adalah bilangan prima ke-${i+1}"); //{} berpengaruh
+     break;
+    }
+     print("$searchNumbers != ${primerNumbers[i]}"); //perbaiki - harusnya 13 != 2 .....11
+  }
+}
